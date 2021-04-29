@@ -35,7 +35,8 @@ async function v0(){
     const mongoName = "lucioles"                   //Nom de la base
    // const mongoUri = 'mongodb://localhost:27017/'; //URL de connection
     //const uri = 'mongodb://10.9.128.189:27017/'; //URL de connection		
-    const mongoUri = 'mongodb+srv://mathieu:mathieu@cluster0.im5bt.mongodb.net/test?retryWrites=true&w=majority';
+    mongodb+srv://<username>:<password>@cluster0.im5bt.mongodb.net/myFirstDatabase?retryWrites=true&w=majority
+    const mongoUri = 'mongodb+srv://mathieu:mathieu@cluster0.im5bt.mongodb.net/iot?retryWrites=true&w=majority';
     
     //Now that we have our URI, we can create an instance of MongoClient.
     const mg_client = new MongoClient(mongoUri,
